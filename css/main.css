@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.container {
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.logo-img {
+ object-fit: cover;
+ width: 120px;
+ height: 120px;
+ margin-bottom: 50px;
+}
+.hero__form {
+    border-radius: 10px !important;
+}
+.hero__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 15px;
+}
+.hero__item {
+    transition: transform 0.5s ease;
+}
+.hero__item:hover {
+    transform: scale(1.02);
+}
+.hero__item-img {
+    /* width: auto;
+    height: 150px; */
+    object-fit:contain;
+    border-radius: 15px;
+}
+.hero__save-btn {
+    display: block;
+    width: 100px;
+    margin-left: auto;
+    margin-bottom: 15px;
+}
+.hero__saved {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 0 20px;
+    width:100%;
+    height: 100vh;
+    background-color: lightblue;
+}
+.hero__save-list {
+    padding-left:0;    
+    
+}
+.hero__save-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.hero__saved-exit {
+    display: block;
+    margin-left: auto;
+}
+.active .hero__saved {
+    display: block;
+}
+.hero__form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.hero__item-name {
+    width: 300px;
+    font-family:sans-serif;
+    font-weight:600;
+}
+.hero__item-summary {
+    width: 313px;
+    height: 253px;
+    resize: none;
+    font-weight: 600;
+    font-family: cursive;
+}
+.hero__form-file {
+    display: none;
+}
+.hero__item-img-label {
+   width: 150px;
+   height: 40px;
+   padding: 8px;
+   background-color:darkgoldenrod;
+   color: #fff;
+   border-radius: 50px;
+}
+.hero__item-price::placeholder {
+    opacity: 0.5;
+}
+.hero__item-input-img{
+    width: 100%;
+    height:200px;
+    border: 1px solid #0000003f;
+    border-radius: 10px;
+    background-image: url("../images/img.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
